@@ -9,7 +9,7 @@ class EmailParser
   #read/writer accessor for class EmailParser
 
   def initialize(email)
-    @emails = email
+    @emails = emails
   end
   
   def parse
