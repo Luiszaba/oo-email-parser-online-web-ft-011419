@@ -19,12 +19,12 @@ class EmailParser
   end
   
   
-  def initialize(emails)
-    @emails=emails
+  def initialize(email)
+    @email=email
   end
   
   def parse
-    @emails.(/[,\s]+/).uniq
+    @email.(/[,\s]+/).uniq
   end
 end
     
