@@ -9,11 +9,11 @@ class EmailParser
   #read/writer accessor for class EmailParser
 
   def initialize(email)
-    @emails = emails
+    @email = email
   end
   
   def parse
-    @emails.(/[,\s]+ /).uniq
+    @email.split(/[,\s]+ /).uniq
   end
 end
     
