@@ -6,19 +6,7 @@
 class EmailParser
   attr_accessor :email
   #read/writer accessor for class EmailParser
-  
-  @@all = []
 
-  
-  def self.all
-    @@all
-  end
-  
-  def self.save
-    self.class.all << self
-  end
-  
-  
   def initialize(email)
     @email=email
   end
