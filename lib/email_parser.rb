@@ -7,12 +7,12 @@ class EmailParser
   attr_accessor :email
   #read/writer accessor for class EmailParser
 
-  def initialize(email)
-    @email=email
+  def initialize(emails)
+    @emails=emails
   end
   
   def parse
-    @email.(/[,\s]+/).uniq
+    @emails.(/[,\s]+/).uniq
   end
 end
     
