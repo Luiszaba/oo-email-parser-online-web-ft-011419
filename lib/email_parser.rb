@@ -24,7 +24,7 @@ class EmailParser
   end
   
   def parse
-    @emails.
+    @emails.(/[,\s]+/).uniq
   end
 end
     
