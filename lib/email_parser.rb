@@ -12,6 +12,7 @@ class EmailParser
   
   def self.save
     self.class.all << self
+  end
   
   def initialize(email)
     @email = email
@@ -21,4 +22,3 @@ class EmailParser
     @email.split(/[,\s]+/).uniq
   end
 end
-    
